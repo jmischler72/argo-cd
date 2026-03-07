@@ -891,8 +891,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -1801,8 +1799,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -2712,8 +2708,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -3601,8 +3595,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -4515,8 +4507,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -5425,8 +5415,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -6336,8 +6324,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -7225,8 +7211,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -8122,8 +8106,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -9246,8 +9228,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -10361,8 +10341,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -11267,8 +11245,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -12183,8 +12159,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -13093,8 +13067,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -14004,8 +13976,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -14893,8 +14863,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -15790,8 +15758,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -16914,8 +16880,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -18029,8 +17993,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -18939,8 +18901,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -19835,8 +19795,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -20959,8 +20917,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -22074,8 +22030,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -23057,8 +23011,6 @@ spec:
                             properties:
                               allowEmpty:
                                 type: boolean
-                              disableUntil:
-                                type: string
                               enabled:
                                 type: boolean
                               prune:

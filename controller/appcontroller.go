@@ -43,6 +43,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
+	"k8s.io/utils/ptr"
 
 	commitclient "github.com/argoproj/argo-cd/v3/commitserver/apiclient"
 	"github.com/argoproj/argo-cd/v3/common"
@@ -2185,15 +2186,6 @@ func (ctrl *ApplicationController) autoSync(app *appv1.Application, syncStatus *
 		return nil, 0
 	}
 
-	// If disableUntil was set but has now expired (or failed to parse), clear it from the spec.
-	if app.Spec.SyncPolicy.Automated != nil && app.Spec.SyncPolicy.Automated.DisableUntil != "" {
-		logCtx.Infof("disableUntil timestamp %s has expired, clearing field", app.Spec.SyncPolicy.Automated.DisableUntil)
-		patch := []byte(`{"spec":{"syncPolicy":{"automated":{"disableUntil":null}}}}`)
-		if _, err := ctrl.PatchAppWithWriteBack(context.Background(), app.Name, app.Namespace, types.MergePatchType, patch, metav1.PatchOptions{}); err != nil {
-			logCtx.WithError(err).Warn("Failed to clear expired disableUntil field")
-		}
-	}
-
 	if app.Operation != nil {
 		logCtx.Infof("Skipping auto-sync: another operation is in progress")
 		return nil, 0
@@ -2224,7 +2216,7 @@ func (ctrl *ApplicationController) autoSync(app *appv1.Application, syncStatus *
 		}
 	}
 
-	source := new(app.Spec.GetSource())
+	source := ptr.To(app.Spec.GetSource())
 	desiredRevisions := []string{syncStatus.Revision}
 	if app.Spec.HasMultipleSources() {
 		source = nil
@@ -2376,7 +2368,7 @@ func (ctrl *ApplicationController) selfHealRemainingBackoff(app *appv1.Applicati
 
 	var timeSinceOperation *time.Duration
 	if app.Status.OperationState.FinishedAt != nil {
-		timeSinceOperation = new(time.Since(app.Status.OperationState.FinishedAt.Time))
+		timeSinceOperation = ptr.To(time.Since(app.Status.OperationState.FinishedAt.Time))
 	}
 
 	var retryAfter time.Duration

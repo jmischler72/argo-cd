@@ -590,10 +590,10 @@ message ApplicationSourceJsonnet {
 
 // ApplicationSourceKustomize holds options specific to an Application source specific to Kustomize
 message ApplicationSourceKustomize {
-  // NamePrefix overrides the namePrefix in the kustomization.yaml for Kustomize apps
+  // NamePrefix is a prefix appended to resources for Kustomize apps
   optional string namePrefix = 1;
 
-  // NameSuffix overrides the nameSuffix in the kustomization.yaml for Kustomize apps
+  // NameSuffix is a suffix appended to resources for Kustomize apps
   optional string nameSuffix = 2;
 
   // Images is a list of Kustomize image override specifications
@@ -2687,9 +2687,6 @@ message SyncPolicyAutomated {
 
   // Enable allows apps to explicitly control automated sync
   optional bool enabled = 4;
-
-  // DisableUntil specifies a time until which automated sync is disabled
-  optional string disableUntil = 5;
 }
 
 // SyncSource specifies a location from which hydrated manifests may be synced. RepoURL is assumed based on the

@@ -411,12 +411,12 @@ spec:
                               apply common labels to resource selectors or not
                             type: boolean
                           namePrefix:
-                            description: NamePrefix overrides the namePrefix in the
-                              kustomization.yaml for Kustomize apps
+                            description: NamePrefix is a prefix appended to resources
+                              for Kustomize apps
                             type: string
                           nameSuffix:
-                            description: NameSuffix overrides the nameSuffix in the
-                              kustomization.yaml for Kustomize apps
+                            description: NameSuffix is a suffix appended to resources
+                              for Kustomize apps
                             type: string
                           namespace:
                             description: Namespace sets the namespace that Kustomize
@@ -800,12 +800,12 @@ spec:
                                 to apply common labels to resource selectors or not
                               type: boolean
                             namePrefix:
-                              description: NamePrefix overrides the namePrefix in
-                                the kustomization.yaml for Kustomize apps
+                              description: NamePrefix is a prefix appended to resources
+                                for Kustomize apps
                               type: string
                             nameSuffix:
-                              description: NameSuffix overrides the nameSuffix in
-                                the kustomization.yaml for Kustomize apps
+                              description: NameSuffix is a suffix appended to resources
+                                for Kustomize apps
                               type: string
                             namespace:
                               description: Namespace sets the namespace that Kustomize
@@ -1299,11 +1299,11 @@ spec:
                           common labels to resource selectors or not
                         type: boolean
                       namePrefix:
-                        description: NamePrefix overrides the namePrefix in the kustomization.yaml
+                        description: NamePrefix is a prefix appended to resources
                           for Kustomize apps
                         type: string
                       nameSuffix:
-                        description: NameSuffix overrides the nameSuffix in the kustomization.yaml
+                        description: NameSuffix is a suffix appended to resources
                           for Kustomize apps
                         type: string
                       namespace:
@@ -1676,12 +1676,12 @@ spec:
                               apply common labels to resource selectors or not
                             type: boolean
                           namePrefix:
-                            description: NamePrefix overrides the namePrefix in the
-                              kustomization.yaml for Kustomize apps
+                            description: NamePrefix is a prefix appended to resources
+                              for Kustomize apps
                             type: string
                           nameSuffix:
-                            description: NameSuffix overrides the nameSuffix in the
-                              kustomization.yaml for Kustomize apps
+                            description: NameSuffix is a suffix appended to resources
+                              for Kustomize apps
                             type: string
                           namespace:
                             description: Namespace sets the namespace that Kustomize
@@ -2087,12 +2087,12 @@ spec:
                             common labels to resource selectors or not
                           type: boolean
                         namePrefix:
-                          description: NamePrefix overrides the namePrefix in the
-                            kustomization.yaml for Kustomize apps
+                          description: NamePrefix is a prefix appended to resources
+                            for Kustomize apps
                           type: string
                         nameSuffix:
-                          description: NameSuffix overrides the nameSuffix in the
-                            kustomization.yaml for Kustomize apps
+                          description: NameSuffix is a suffix appended to resources
+                            for Kustomize apps
                           type: string
                         namespace:
                           description: Namespace sets the namespace that Kustomize
@@ -2238,10 +2238,6 @@ spec:
                         description: 'AllowEmpty allows apps have zero live resources
                           (default: false)'
                         type: boolean
-                      disableUntil:
-                        description: DisableUntil specifies a time until which automated
-                          sync is disabled
-                        type: string
                       enabled:
                         description: Enable allows apps to explicitly control automated
                           sync
@@ -2650,12 +2646,12 @@ spec:
                                 to apply common labels to resource selectors or not
                               type: boolean
                             namePrefix:
-                              description: NamePrefix overrides the namePrefix in
-                                the kustomization.yaml for Kustomize apps
+                              description: NamePrefix is a prefix appended to resources
+                                for Kustomize apps
                               type: string
                             nameSuffix:
-                              description: NameSuffix overrides the nameSuffix in
-                                the kustomization.yaml for Kustomize apps
+                              description: NameSuffix is a suffix appended to resources
+                                for Kustomize apps
                               type: string
                             namespace:
                               description: Namespace sets the namespace that Kustomize
@@ -3043,12 +3039,12 @@ spec:
                                   not
                                 type: boolean
                               namePrefix:
-                                description: NamePrefix overrides the namePrefix in
-                                  the kustomization.yaml for Kustomize apps
+                                description: NamePrefix is a prefix appended to resources
+                                  for Kustomize apps
                                 type: string
                               nameSuffix:
-                                description: NameSuffix overrides the nameSuffix in
-                                  the kustomization.yaml for Kustomize apps
+                                description: NameSuffix is a suffix appended to resources
+                                  for Kustomize apps
                                 type: string
                               namespace:
                                 description: Namespace sets the namespace that Kustomize
@@ -3592,12 +3588,12 @@ spec:
                                       or not
                                     type: boolean
                                   namePrefix:
-                                    description: NamePrefix overrides the namePrefix
-                                      in the kustomization.yaml for Kustomize apps
+                                    description: NamePrefix is a prefix appended to
+                                      resources for Kustomize apps
                                     type: string
                                   nameSuffix:
-                                    description: NameSuffix overrides the nameSuffix
-                                      in the kustomization.yaml for Kustomize apps
+                                    description: NameSuffix is a suffix appended to
+                                      resources for Kustomize apps
                                     type: string
                                   namespace:
                                     description: Namespace sets the namespace that
@@ -4005,12 +4001,12 @@ spec:
                                         selectors or not
                                       type: boolean
                                     namePrefix:
-                                      description: NamePrefix overrides the namePrefix
-                                        in the kustomization.yaml for Kustomize apps
+                                      description: NamePrefix is a prefix appended
+                                        to resources for Kustomize apps
                                       type: string
                                     nameSuffix:
-                                      description: NameSuffix overrides the nameSuffix
-                                        in the kustomization.yaml for Kustomize apps
+                                      description: NameSuffix is a suffix appended
+                                        to resources for Kustomize apps
                                       type: string
                                     namespace:
                                       description: Namespace sets the namespace that
@@ -4535,12 +4531,12 @@ spec:
                                   not
                                 type: boolean
                               namePrefix:
-                                description: NamePrefix overrides the namePrefix in
-                                  the kustomization.yaml for Kustomize apps
+                                description: NamePrefix is a prefix appended to resources
+                                  for Kustomize apps
                                 type: string
                               nameSuffix:
-                                description: NameSuffix overrides the nameSuffix in
-                                  the kustomization.yaml for Kustomize apps
+                                description: NameSuffix is a suffix appended to resources
+                                  for Kustomize apps
                                 type: string
                               namespace:
                                 description: Namespace sets the namespace that Kustomize
@@ -4939,12 +4935,12 @@ spec:
                                     not
                                   type: boolean
                                 namePrefix:
-                                  description: NamePrefix overrides the namePrefix
-                                    in the kustomization.yaml for Kustomize apps
+                                  description: NamePrefix is a prefix appended to
+                                    resources for Kustomize apps
                                   type: string
                                 nameSuffix:
-                                  description: NameSuffix overrides the nameSuffix
-                                    in the kustomization.yaml for Kustomize apps
+                                  description: NameSuffix is a suffix appended to
+                                    resources for Kustomize apps
                                   type: string
                                 namespace:
                                   description: Namespace sets the namespace that Kustomize
@@ -5464,12 +5460,12 @@ spec:
                                       or not
                                     type: boolean
                                   namePrefix:
-                                    description: NamePrefix overrides the namePrefix
-                                      in the kustomization.yaml for Kustomize apps
+                                    description: NamePrefix is a prefix appended to
+                                      resources for Kustomize apps
                                     type: string
                                   nameSuffix:
-                                    description: NameSuffix overrides the nameSuffix
-                                      in the kustomization.yaml for Kustomize apps
+                                    description: NameSuffix is a suffix appended to
+                                      resources for Kustomize apps
                                     type: string
                                   namespace:
                                     description: Namespace sets the namespace that
@@ -5917,12 +5913,12 @@ spec:
                                       or not
                                     type: boolean
                                   namePrefix:
-                                    description: NamePrefix overrides the namePrefix
-                                      in the kustomization.yaml for Kustomize apps
+                                    description: NamePrefix is a prefix appended to
+                                      resources for Kustomize apps
                                     type: string
                                   nameSuffix:
-                                    description: NameSuffix overrides the nameSuffix
-                                      in the kustomization.yaml for Kustomize apps
+                                    description: NameSuffix is a suffix appended to
+                                      resources for Kustomize apps
                                     type: string
                                   namespace:
                                     description: Namespace sets the namespace that
@@ -6430,12 +6426,12 @@ spec:
                                   not
                                 type: boolean
                               namePrefix:
-                                description: NamePrefix overrides the namePrefix in
-                                  the kustomization.yaml for Kustomize apps
+                                description: NamePrefix is a prefix appended to resources
+                                  for Kustomize apps
                                 type: string
                               nameSuffix:
-                                description: NameSuffix overrides the nameSuffix in
-                                  the kustomization.yaml for Kustomize apps
+                                description: NameSuffix is a suffix appended to resources
+                                  for Kustomize apps
                                 type: string
                               namespace:
                                 description: Namespace sets the namespace that Kustomize
@@ -6834,12 +6830,12 @@ spec:
                                     not
                                   type: boolean
                                 namePrefix:
-                                  description: NamePrefix overrides the namePrefix
-                                    in the kustomization.yaml for Kustomize apps
+                                  description: NamePrefix is a prefix appended to
+                                    resources for Kustomize apps
                                   type: string
                                 nameSuffix:
-                                  description: NameSuffix overrides the nameSuffix
-                                    in the kustomization.yaml for Kustomize apps
+                                  description: NameSuffix is a suffix appended to
+                                    resources for Kustomize apps
                                   type: string
                                 namespace:
                                   description: Namespace sets the namespace that Kustomize
@@ -7900,8 +7896,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -8810,8 +8804,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -9721,8 +9713,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -10610,8 +10600,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -11524,8 +11512,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -12434,8 +12420,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -13345,8 +13329,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -14234,8 +14216,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -15131,8 +15111,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -16255,8 +16233,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -17370,8 +17346,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -18276,8 +18250,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -19192,8 +19164,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -20102,8 +20072,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -21013,8 +20981,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -21902,8 +21868,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -22799,8 +22763,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -23923,8 +23885,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -25038,8 +24998,6 @@ spec:
                                                 properties:
                                                   allowEmpty:
                                                     type: boolean
-                                                  disableUntil:
-                                                    type: string
                                                   enabled:
                                                     type: boolean
                                                   prune:
@@ -25948,8 +25906,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -26844,8 +26800,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -27968,8 +27922,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -29083,8 +29035,6 @@ spec:
                                       properties:
                                         allowEmpty:
                                           type: boolean
-                                        disableUntil:
-                                          type: string
                                         enabled:
                                           type: boolean
                                         prune:
@@ -30066,8 +30016,6 @@ spec:
                             properties:
                               allowEmpty:
                                 type: boolean
-                              disableUntil:
-                                type: string
                               enabled:
                                 type: boolean
                               prune:

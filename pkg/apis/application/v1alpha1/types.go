@@ -685,9 +685,9 @@ func (images KustomizeImages) Find(image KustomizeImage) int {
 
 // ApplicationSourceKustomize holds options specific to an Application source specific to Kustomize
 type ApplicationSourceKustomize struct {
-	// NamePrefix overrides the namePrefix in the kustomization.yaml for Kustomize apps
+	// NamePrefix is a prefix appended to resources for Kustomize apps
 	NamePrefix string `json:"namePrefix,omitempty" protobuf:"bytes,1,opt,name=namePrefix"`
-	// NameSuffix overrides the nameSuffix in the kustomization.yaml for Kustomize apps
+	// NameSuffix is a suffix appended to resources for Kustomize apps
 	NameSuffix string `json:"nameSuffix,omitempty" protobuf:"bytes,2,opt,name=nameSuffix"`
 	// Images is a list of Kustomize image override specifications
 	Images KustomizeImages `json:"images,omitempty" protobuf:"bytes,3,opt,name=images"`
@@ -1482,12 +1482,6 @@ type SyncPolicy struct {
 // IsAutomatedSyncEnabled checks if the automated sync is enabled or disabled
 func (p *SyncPolicy) IsAutomatedSyncEnabled() bool {
 	if p.Automated != nil && (p.Automated.Enabled == nil || *p.Automated.Enabled) {
-		if p.Automated.DisableUntil != "" {
-			disableUntil, err := time.Parse(time.RFC3339Nano, p.Automated.DisableUntil)
-			if err == nil && time.Now().Before(disableUntil) {
-				return false
-			}
-		}
 		return true
 	}
 	return false
@@ -1572,8 +1566,6 @@ type SyncPolicyAutomated struct {
 	AllowEmpty bool `json:"allowEmpty,omitempty" protobuf:"bytes,3,opt,name=allowEmpty"`
 	// Enable allows apps to explicitly control automated sync
 	Enabled *bool `json:"enabled,omitempty" protobuf:"bytes,4,opt,name=enabled"`
-	// DisableUntil specifies a time until which automated sync is disabled
-	DisableUntil string `json:"disableUntil,omitempty" protobuf:"bytes,5,opt,name=disableUntil"`
 }
 
 // SyncStrategy controls the manner in which a sync is performed
@@ -2281,7 +2273,7 @@ type Cluster struct {
 	// The embedded metav1.ObjectMeta field is purely here to please the informer when converting from a v1.Secret to a Cluster.
 	// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
 	// +optional
-	metav1.ObjectMeta `json:"-"`
+	metav1.ObjectMeta `json:"-,omitempty"`
 }
 
 func (c *Cluster) Sanitized() *Cluster {

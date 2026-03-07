@@ -7771,11 +7771,11 @@
         },
         "namePrefix": {
           "type": "string",
-          "title": "NamePrefix overrides the namePrefix in the kustomization.yaml for Kustomize apps"
+          "title": "NamePrefix is a prefix appended to resources for Kustomize apps"
         },
         "nameSuffix": {
           "type": "string",
-          "title": "NameSuffix overrides the nameSuffix in the kustomization.yaml for Kustomize apps"
+          "title": "NameSuffix is a suffix appended to resources for Kustomize apps"
         },
         "namespace": {
           "type": "string",
@@ -10706,10 +10706,6 @@
         "allowEmpty": {
           "type": "boolean",
           "title": "AllowEmpty allows apps have zero live resources (default: false)"
-        },
-        "disableUntil": {
-          "type": "string",
-          "title": "DisableUntil specifies a time until which automated sync is disabled"
         },
         "enabled": {
           "type": "boolean",
